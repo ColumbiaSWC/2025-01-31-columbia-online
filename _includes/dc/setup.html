@@ -63,9 +63,13 @@ Social sciences workshops
 
 {% elsif site.curriculum == "dc-socsci" %}
 
-{% if site.flavor == "r" %}
+{% comment %}
 {% include install_instructions/openrefine.html
+{% endcomment %}
+
 {% include install_instructions/r.html %}
+
+{% if site.flavor == "r" %}
 <p>
   The setup instructions for the Data Carpentry Social Sciences
   workshops (with R) can be found at <a href="https://datacarpentry.org/socialsci-workshop/setup-r-workshop.html">
